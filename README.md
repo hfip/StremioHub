@@ -42,43 +42,25 @@ const REPO = 'https://github.com/your-username/StremioHub'
 
 ## النشر على Cloudflare Pages
 
-### الطريقة الأسهل (من لوحة التحكم)
+الموقع منشور بالفعل على **https://stremiohub.pages.dev** (والمستودع
+[hfip/StremioHub](https://github.com/hfip/StremioHub))، والنشر يتم تلقائيًا عبر GitHub Actions:
+كل `git push` على `main` يبني الموقع ويرفعه.
 
-1. أنشئ مستودعًا على GitHub وارفع المشروع:
+### كيف يعمل
 
-   ```bash
-   git init
-   git add .
-   git commit -m "StremioHub: initial site"
-   git branch -M main
-   git remote add origin https://github.com/<username>/StremioHub.git
-   git push -u origin main
-   ```
+1. `.github/workflows/deploy.yml` يشغّل `npm ci` ثم `npm run docs:build`.
+2. يرفع `docs/.vitepress/dist` إلى مشروع Cloudflare Pages باسم `stremiohub`.
+3. التوكن محفوظ في **Secrets** المستودع: `CLOUDFLARE_API_TOKEN` و`CLOUDFLARE_ACCOUNT_ID`.
 
-2. من [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create**
-   → **Pages** → **Connect to Git**، واختر المستودع.
+### إذا أردت مشروعًا جديدًا باسم آخر
 
-3. استخدم هذه الإعدادات:
+```bash
+wrangler pages project create <project-name> --production-branch main
+wrangler pages deploy docs/.vitepress/dist --project-name <project-name>
+```
 
-   | الإعداد | القيمة |
-   | --- | --- |
-   | Framework preset | VitePress (أو None) |
-   | Build command | `npm run docs:build` |
-   | Build output directory | `docs/.vitepress/dist` |
-   | Node version | `20` (متغير بيئة `NODE_VERSION=20`) |
-
-4. اضغط **Save and Deploy**. سيصبح الموقع على `https://<project>.pages.dev`، وكل `git push`
-   على `main` يعيد النشر تلقائيًا.
-
-### النشر من GitHub Actions (اختياري)
-
-الملف `.github/workflows/deploy.yml` جاهز. أضف في إعدادات المستودع → **Secrets**:
-
-- `CLOUDFLARE_API_TOKEN` — توكن من Cloudflare بصلاحية *Cloudflare Pages: Edit*
-- `CLOUDFLARE_ACCOUNT_ID` — موجود في صفحة Workers & Pages
-
-إذا اخترت ربط المستودع من لوحة Cloudflare بدلًا من ذلك، احذف ملف الـ workflow لتجنّب النشر
-المزدوج.
+ثم غيّر `--project-name` في ملف الـ workflow. ولا تنسَ تحديث `hostname` في `sitemap` داخل
+`docs/.vitepress/config.ts` وملف `docs/public/robots.txt`.
 
 ### نطاق مخصص
 
@@ -133,3 +115,5 @@ with Stremio.
 ---
 
 الفضل لفريق [Stremio](https://www.stremio.com/) ولمجتمع [FMHY](https://fmhy.net/).
+
+صُنع بواسطة [@Abdulluh_X](https://t.me/Abdulluh_X).
