@@ -31,8 +31,9 @@ untouched for years, or anything that requires a shady installer.
 ## Adding a new page
 
 1. Create `docs/my-page.md` and `docs/ar/my-page.md`.
-2. Add both to `nav` and `sidebar` in `docs/.vitepress/config.ts` (top-level for English, inside
-   `locales.ar.themeConfig` for Arabic).
+2. Add both to the `sidebar` object in `docs/.vitepress/config.ts` — the sidebar is keyed by path:
+   `guideSidebar` / `guideSidebarAr` for guide pages, `resourcesSidebar` / `resourcesSidebarAr` for
+   the rest. Add it to `nav` too if it is a top-level section.
 3. Add the translation pair to the home page features only if it is a main section.
 
 ## Style
