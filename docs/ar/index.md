@@ -35,9 +35,9 @@ features:
     details: الخدمات التي تحوّل التورنت المخزّن وملفات NZB إلى بث فوري.
     link: /ar/debrid-services
   - icon: 📚
-    title: أدلة المجتمع
-    details: شروحات التركيب، التوثيق الرسمي، وويكيات المجتمع.
-    link: /ar/guides
+    title: الأدلة
+    details: شروحات ستريمو وDebrid والاستضافة الذاتية والألعاب والأنمي.
+    link: /ar/guides/
   - icon: 📖
     title: المصطلحات
     details: المصطلحات التي تحتاجها فعلاً — إضافات، manifest، كاش، P2P، debrid.

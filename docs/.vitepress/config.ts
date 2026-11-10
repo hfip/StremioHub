@@ -1,15 +1,185 @@
 import { defineConfig } from 'vitepress'
 
-// 👉 غيّر هذا الرابط الوحيد بعد إنشاء المستودع / Change this once you create the repo
+// 👉 روابط الهوية / identity links
 const REPO = 'https://github.com/hfip/StremioHub'
 const TELEGRAM = 'https://t.me/Abdulluh_X'
+
+/* ------------------------------------------------------------------ */
+/*  English sidebars                                                   */
+/* ------------------------------------------------------------------ */
+
+const resourcesSidebar = [
+  {
+    text: 'Resources',
+    items: [
+      { text: 'Apps & Forks', link: '/core-apps' },
+      { text: 'Add-ons & Plugins', link: '/addons' },
+      { text: 'Tools & Utilities', link: '/tools-utilities' },
+      { text: 'Debrid & Usenet', link: '/debrid-services' },
+      { text: 'Guides', link: '/guides/' },
+      { text: 'Glossary', link: '/glossary' }
+    ]
+  }
+]
+
+const guideSidebar = [
+  {
+    text: 'Guides',
+    items: [
+      { text: 'All guides', link: '/guides/' },
+      { text: 'Credits & sources', link: '/guides/credits' }
+    ]
+  },
+  {
+    text: 'Stremio',
+    collapsed: false,
+    items: [
+      { text: 'Overview', link: '/guides/stremio/' },
+      { text: 'Getting started', link: '/guides/stremio/setup' },
+      { text: 'How add-ons work', link: '/guides/stremio/addons' },
+      { text: 'AIOStreams', link: '/guides/stremio/aiostreams' },
+      { text: 'Comet', link: '/guides/stremio/comet' },
+      { text: 'MediaFusion', link: '/guides/stremio/mediafusion' },
+      { text: 'Torrentio', link: '/guides/stremio/torrentio' },
+      { text: 'Debrid providers', link: '/guides/stremio/debrid' },
+      { text: 'Usenet', link: '/guides/stremio/usenet' },
+      { text: 'Metadata & catalogs', link: '/guides/stremio/metadata' },
+      { text: 'Subtitles', link: '/guides/stremio/subtitles' },
+      { text: 'Extras & tools', link: '/guides/stremio/extras' },
+      { text: 'Troubleshooting', link: '/guides/stremio/troubleshooting' },
+      { text: 'FAQ', link: '/guides/stremio/faq' }
+    ]
+  },
+  {
+    text: 'Self-hosting',
+    collapsed: true,
+    items: [
+      { text: 'Overview', link: '/guides/self-hosting/' },
+      { text: 'Docker basics', link: '/guides/self-hosting/docker' },
+      { text: 'Oracle free VPS', link: '/guides/self-hosting/oracle' }
+    ]
+  },
+  {
+    text: 'Gaming',
+    collapsed: true,
+    items: [
+      { text: 'Overview', link: '/guides/gaming/' },
+      { text: 'Plutonium', link: '/guides/gaming/plutonium' }
+    ]
+  },
+  {
+    text: 'Anime (Aniyomi)',
+    collapsed: true,
+    items: [
+      { text: 'Overview', link: '/guides/anime/' },
+      { text: 'Setup', link: '/guides/anime/setup' },
+      { text: 'Forks', link: '/guides/anime/forks' }
+    ]
+  },
+  {
+    text: 'Resources',
+    collapsed: true,
+    items: [
+      { text: 'Apps & Forks', link: '/core-apps' },
+      { text: 'Add-ons & Plugins', link: '/addons' },
+      { text: 'Tools & Utilities', link: '/tools-utilities' },
+      { text: 'Debrid & Usenet', link: '/debrid-services' },
+      { text: 'Glossary', link: '/glossary' }
+    ]
+  }
+]
+
+/* ------------------------------------------------------------------ */
+/*  Arabic sidebars                                                    */
+/* ------------------------------------------------------------------ */
+
+const resourcesSidebarAr = [
+  {
+    text: 'الموارد',
+    items: [
+      { text: 'التطبيقات والنسخ', link: '/ar/core-apps' },
+      { text: 'الإضافات والبلجنات', link: '/ar/addons' },
+      { text: 'الأدوات والمساعدات', link: '/ar/tools-utilities' },
+      { text: 'Debrid و Usenet', link: '/ar/debrid-services' },
+      { text: 'الأدلة', link: '/ar/guides/' },
+      { text: 'المصطلحات', link: '/ar/glossary' }
+    ]
+  }
+]
+
+const guideSidebarAr = [
+  {
+    text: 'الأدلة',
+    items: [
+      { text: 'كل الأدلة', link: '/ar/guides/' },
+      { text: 'الحقوق والمصادر', link: '/ar/guides/credits' }
+    ]
+  },
+  {
+    text: 'ستريمو',
+    collapsed: false,
+    items: [
+      { text: 'نظرة عامة', link: '/ar/guides/stremio/' },
+      { text: 'البداية', link: '/ar/guides/stremio/setup' },
+      { text: 'كيف تعمل الإضافات', link: '/ar/guides/stremio/addons' },
+      { text: 'AIOStreams', link: '/ar/guides/stremio/aiostreams' },
+      { text: 'Comet', link: '/ar/guides/stremio/comet' },
+      { text: 'MediaFusion', link: '/ar/guides/stremio/mediafusion' },
+      { text: 'Torrentio', link: '/ar/guides/stremio/torrentio' },
+      { text: 'خدمات Debrid', link: '/ar/guides/stremio/debrid' },
+      { text: 'Usenet', link: '/ar/guides/stremio/usenet' },
+      { text: 'الميتاداتا والكتالوجات', link: '/ar/guides/stremio/metadata' },
+      { text: 'الترجمة', link: '/ar/guides/stremio/subtitles' },
+      { text: 'الأدوات والإضافات المساعدة', link: '/ar/guides/stremio/extras' },
+      { text: 'حل المشاكل', link: '/ar/guides/stremio/troubleshooting' },
+      { text: 'الأسئلة الشائعة', link: '/ar/guides/stremio/faq' }
+    ]
+  },
+  {
+    text: 'الاستضافة الذاتية',
+    collapsed: true,
+    items: [
+      { text: 'نظرة عامة', link: '/ar/guides/self-hosting/' },
+      { text: 'أساسيات Docker', link: '/ar/guides/self-hosting/docker' },
+      { text: 'Oracle VPS مجاني', link: '/ar/guides/self-hosting/oracle' }
+    ]
+  },
+  {
+    text: 'الألعاب',
+    collapsed: true,
+    items: [
+      { text: 'نظرة عامة', link: '/ar/guides/gaming/' },
+      { text: 'Plutonium', link: '/ar/guides/gaming/plutonium' }
+    ]
+  },
+  {
+    text: 'الأنمي (Aniyomi)',
+    collapsed: true,
+    items: [
+      { text: 'نظرة عامة', link: '/ar/guides/anime/' },
+      { text: 'التثبيت', link: '/ar/guides/anime/setup' },
+      { text: 'النسخ المعدّلة', link: '/ar/guides/anime/forks' }
+    ]
+  },
+  {
+    text: 'الموارد',
+    collapsed: true,
+    items: [
+      { text: 'التطبيقات والنسخ', link: '/ar/core-apps' },
+      { text: 'الإضافات والبلجنات', link: '/ar/addons' },
+      { text: 'الأدوات والمساعدات', link: '/ar/tools-utilities' },
+      { text: 'Debrid و Usenet', link: '/ar/debrid-services' },
+      { text: 'المصطلحات', link: '/ar/glossary' }
+    ]
+  }
+]
 
 export default defineConfig({
   lang: 'en',
   title: 'StremioHub',
   titleTemplate: ':title — StremioHub',
   description:
-    'The megathread for all things Stremio: apps, forks, addons, tools, debrid services and guides.',
+    'Guides, apps, forks, add-ons and tools for Stremio — plus self-hosting, gaming and anime guides. Bilingual English/Arabic.',
   cleanUrls: true,
   lastUpdated: true,
   sitemap: {
@@ -26,7 +196,8 @@ export default defineConfig({
       'meta',
       {
         property: 'og:description',
-        content: 'The megathread for all things Stremio: apps, forks, addons, tools and guides.'
+        content:
+          'Guides and resources for Stremio: setup, add-ons, debrid, self-hosting, gaming and anime.'
       }
     ],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }]
@@ -44,7 +215,7 @@ export default defineConfig({
       link: '/ar/',
       title: 'StremioHub — دليل ستريمو',
       description:
-        'دليل شامل لكل ما يتعلق بتطبيق ستريمو: التطبيقات، النسخ المعدّلة، الإضافات، الأدوات والخدمات.',
+        'أدلة وموارد ستريمو: التثبيت، الإضافات، Debrid، الاستضافة الذاتية، الألعاب والأنمي.',
       themeConfig: {
         nav: [
           { text: 'الرئيسية', link: '/ar/' },
@@ -52,22 +223,13 @@ export default defineConfig({
           { text: 'الإضافات', link: '/ar/addons' },
           { text: 'الأدوات', link: '/ar/tools-utilities' },
           { text: 'Debrid و Usenet', link: '/ar/debrid-services' },
-          { text: 'الأدلة', link: '/ar/guides' },
+          { text: 'الأدلة', link: '/ar/guides/' },
           { text: 'المصطلحات', link: '/ar/glossary' }
         ],
-        sidebar: [
-          {
-            text: 'التنقل',
-            items: [
-              { text: 'التطبيقات والنسخ', link: '/ar/core-apps' },
-              { text: 'الإضافات والبلجنات', link: '/ar/addons' },
-              { text: 'الأدوات والمساعدات', link: '/ar/tools-utilities' },
-              { text: 'Debrid و Usenet', link: '/ar/debrid-services' },
-              { text: 'أدلة المجتمع', link: '/ar/guides' },
-              { text: 'المصطلحات', link: '/ar/glossary' }
-            ]
-          }
-        ],
+        sidebar: {
+          '/ar/guides/': guideSidebarAr,
+          '/ar/': resourcesSidebarAr
+        },
         outline: { level: [2, 3], label: 'في هذه الصفحة' },
         docFooter: { prev: 'الصفحة السابقة', next: 'الصفحة التالية' },
         sidebarMenuLabel: 'القائمة',
@@ -119,23 +281,14 @@ export default defineConfig({
       { text: 'Add-ons', link: '/addons' },
       { text: 'Tools & Utilities', link: '/tools-utilities' },
       { text: 'Debrid & Usenet', link: '/debrid-services' },
-      { text: 'Guides', link: '/guides' },
+      { text: 'Guides', link: '/guides/' },
       { text: 'Glossary', link: '/glossary' }
     ],
 
-    sidebar: [
-      {
-        text: 'Navigation',
-        items: [
-          { text: 'Apps & Forks', link: '/core-apps' },
-          { text: 'Add-ons & Plugins', link: '/addons' },
-          { text: 'Tools & Utilities', link: '/tools-utilities' },
-          { text: 'Debrid & Usenet', link: '/debrid-services' },
-          { text: 'Community Guides', link: '/guides' },
-          { text: 'Glossary', link: '/glossary' }
-        ]
-      }
-    ],
+    sidebar: {
+      '/guides/': guideSidebar,
+      '/': resourcesSidebar
+    },
 
     outline: { level: [2, 3], label: 'On this page' },
     docFooter: { prev: 'Previous page', next: 'Next page' },
