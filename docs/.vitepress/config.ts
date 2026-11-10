@@ -82,7 +82,7 @@ export default defineConfig({
         },
         footer: {
           message:
-            'هذا الموقع لا يستضيف أي ملفات. الشكر لفريق Stremio ولمجتمع المستخدمين.',
+            'من إعداد @Abdulluh_X · هذا الموقع لا يستضيف أي ملفات. الشكر لفريق Stremio ولمجتمع المستخدمين.',
           copyright: '© 2026 StremioHub'
         }
       }
@@ -147,7 +147,8 @@ export default defineConfig({
     langMenuLabel: 'Change language',
 
     footer: {
-      message: 'This site does not host any files. Credit to the Stremio team and the community.',
+      message:
+        'Made by @Abdulluh_X · This site does not host any files. Credit to the Stremio team and the community.',
       copyright: '© 2026 StremioHub'
     }
   }
