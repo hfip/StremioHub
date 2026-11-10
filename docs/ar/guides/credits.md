@@ -26,8 +26,6 @@
 - **MediaFusion** — [mhdzumair/MediaFusion](https://github.com/mhdzumair/MediaFusion)
 - **Torrentio** — [TheBeastLT/torrentio-scraper](https://github.com/TheBeastLT/torrentio-scraper)
 - **StremThru** — [MunifTanjim/stremthru](https://github.com/MunifTanjim/stremthru)
-- **Aniyomi** — [aniyomi.org](https://aniyomi.org/)، [GitHub](https://github.com/aniyomiorg/aniyomi)
-- **Plutonium** — [plutonium.pw](https://plutonium.pw/)
 
 ## المجتمعات
 
@@ -48,6 +46,6 @@
 
 ## قانوني
 
-StremioHub مشروع مجتمعي غير رسمي، وغير مرتبط بستريمو أو Viren070 أو Plutonium أو Aniyomi. لا
+StremioHub مشروع مجتمعي غير رسمي، وغير مرتبط بستريمو أو Viren070. لا
 يستضيف ملفات ولا يربط وسائط محمية. العلامات التجارية لأصحابها؛ ونصوص هذا الموقع عملنا ونسمح
 بإعادة استخدامها مع ذكر المصدر.

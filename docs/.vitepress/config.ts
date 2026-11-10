@@ -60,23 +60,6 @@ const guideSidebar = [
     ]
   },
   {
-    text: 'Gaming',
-    collapsed: true,
-    items: [
-      { text: 'Overview', link: '/guides/gaming/' },
-      { text: 'Plutonium', link: '/guides/gaming/plutonium' }
-    ]
-  },
-  {
-    text: 'Anime (Aniyomi)',
-    collapsed: true,
-    items: [
-      { text: 'Overview', link: '/guides/anime/' },
-      { text: 'Setup', link: '/guides/anime/setup' },
-      { text: 'Forks', link: '/guides/anime/forks' }
-    ]
-  },
-  {
     text: 'Resources',
     collapsed: true,
     items: [
@@ -145,23 +128,6 @@ const guideSidebarAr = [
     ]
   },
   {
-    text: 'الألعاب',
-    collapsed: true,
-    items: [
-      { text: 'نظرة عامة', link: '/ar/guides/gaming/' },
-      { text: 'Plutonium', link: '/ar/guides/gaming/plutonium' }
-    ]
-  },
-  {
-    text: 'الأنمي (Aniyomi)',
-    collapsed: true,
-    items: [
-      { text: 'نظرة عامة', link: '/ar/guides/anime/' },
-      { text: 'التثبيت', link: '/ar/guides/anime/setup' },
-      { text: 'النسخ المعدّلة', link: '/ar/guides/anime/forks' }
-    ]
-  },
-  {
     text: 'الموارد',
     collapsed: true,
     items: [
@@ -179,7 +145,7 @@ export default defineConfig({
   title: 'StremioHub',
   titleTemplate: ':title — StremioHub',
   description:
-    'Guides, apps, forks, add-ons and tools for Stremio — plus self-hosting, gaming and anime guides. Bilingual English/Arabic.',
+    'Guides, apps, forks, add-ons and tools for Stremio — plus self-hosting guides. Bilingual English/Arabic.',
   cleanUrls: true,
   lastUpdated: true,
   sitemap: {
@@ -197,7 +163,7 @@ export default defineConfig({
       {
         property: 'og:description',
         content:
-          'Guides and resources for Stremio: setup, add-ons, debrid, self-hosting, gaming and anime.'
+          'Guides and resources for Stremio: setup, add-ons, debrid and self-hosting.'
       }
     ],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }]
@@ -215,7 +181,7 @@ export default defineConfig({
       link: '/ar/',
       title: 'StremioHub — دليل ستريمو',
       description:
-        'أدلة وموارد ستريمو: التثبيت، الإضافات، Debrid، الاستضافة الذاتية، الألعاب والأنمي.',
+        'أدلة وموارد ستريمو: التثبيت، الإضافات، Debrid، والاستضافة الذاتية.',
       themeConfig: {
         nav: [
           { text: 'الرئيسية', link: '/ar/' },

@@ -3,7 +3,7 @@
 أدلة عملية مجرّبة للبرامج الموجودة في [قسم الموارد](/ar/core-apps). مكتوبة لمن يريد تشغيل شيء
 فعلاً، لا لقراءة دليل تقني طويل.
 
-أربعة مسارات:
+مساران:
 
 ## 🎬 ستريمو
 
@@ -27,17 +27,6 @@
 - [نظرة عامة](/ar/guides/self-hosting/) — ما يستحق الاستضافة فعلاً
 - [أساسيات Docker](/ar/guides/self-hosting/docker) — الحاويات، compose، البروكسي، التحديثات
 - [Oracle VPS مجاني](/ar/guides/self-hosting/oracle) — سيرفر مجاني قابل للاستخدام
-
-## 🎮 الألعاب
-
-- [نظرة عامة](/ar/guides/gaming/)
-- [Plutonium](/ar/guides/gaming/plutonium) — تشغيل ألعاب Call of Duty القديمة على سيرفرات مجتمعية
-
-## 📺 الأنمي
-
-- [نظرة عامة على Aniyomi](/ar/guides/anime/)
-- [التثبيت](/ar/guides/anime/setup) — الإضافات، التتبّع، التحميل، النسخ الاحتياطي
-- [النسخ المعدّلة](/ar/guides/anime/forks) — Animiru وAnimetail وغيرهما
 
 ## الحقوق
 

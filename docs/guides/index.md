@@ -3,7 +3,7 @@
 Practical, tested walkthroughs for the software in the [resources section](/core-apps). Written for
 people who want to get something working, not read a manual.
 
-Four tracks:
+Two tracks:
 
 ## 🎬 Stremio
 
@@ -27,17 +27,6 @@ Run your own add-ons and services instead of relying on public instances.
 - [Overview](/guides/self-hosting/) — what is worth hosting
 - [Docker basics](/guides/self-hosting/docker) — containers, compose, reverse proxy, updates
 - [Oracle free VPS](/guides/self-hosting/oracle) — a free server that is actually usable
-
-## 🎮 Gaming
-
-- [Overview](/guides/gaming/)
-- [Plutonium](/guides/gaming/plutonium) — playing older Call of Duty titles on private servers
-
-## 📺 Anime
-
-- [Aniyomi overview](/guides/anime/)
-- [Setup](/guides/anime/setup) — extensions, tracking, downloads, backups
-- [Forks](/guides/anime/forks) — Animiru, Animetail and friends
 
 ## Credits
 

@@ -35,9 +35,13 @@ features:
     details: الخدمات التي تحوّل التورنت المخزّن وملفات NZB إلى بث فوري.
     link: /ar/debrid-services
   - icon: 📚
-    title: الأدلة
-    details: شروحات ستريمو وDebrid والاستضافة الذاتية والألعاب والأنمي.
-    link: /ar/guides/
+    title: أدلة ستريمو
+    details: التثبيت، الإضافات، Debrid، Usenet، الميتاداتا، الترجمة، حل المشاكل والأسئلة الشائعة.
+    link: /ar/guides/stremio/
+  - icon: 🖥️
+    title: الاستضافة الذاتية
+    details: شغّل إضافاتك وخدماتك بنفسك عبر Docker وCaddy وخادم Oracle VPS مجاني.
+    link: /ar/guides/self-hosting/
   - icon: 📖
     title: المصطلحات
     details: المصطلحات التي تحتاجها فعلاً — إضافات، manifest، كاش، P2P، debrid.

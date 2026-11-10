@@ -1,6 +1,6 @@
 # StremioHub
 
-دليل مجتمعي شامل: موارد وأدلة **ستريمو**، مع أقسام للاستضافة الذاتية والألعاب والأنمي.
+دليل مجتمعي شامل: موارد وأدلة **ستريمو**، مع قسم للاستضافة الذاتية.
 مبني بـ [VitePress](https://vitepress.dev)، ثنائي اللغة (إنجليزي/عربي مع RTL)، وبنفس أسلوب
 [NuvioHub](https://nuviohub.pages.dev/).
 
@@ -24,13 +24,11 @@
 
 ## الأدلة
 
-`/guides/` يحتوي أدلة أصلية ثنائية اللغة في أربعة مسارات:
+`/guides/` يحتوي أدلة أصلية ثنائية اللغة في مسارين:
 
 - **ستريمو** — البداية، الإضافات، AIOStreams، Comet، MediaFusion، Torrentio، Debrid، Usenet،
   الميتاداتا، الترجمة، الأدوات، حل المشاكل، الأسئلة الشائعة.
 - **الاستضافة الذاتية** — Docker وOracle VPS.
-- **الألعاب** — Plutonium.
-- **الأنمي** — Aniyomi وإعداده ونسخه المعدّلة.
 
 الأدلة مكتوبة بصياغتنا مع روابط للمصادر الأصلية؛ راجع `/guides/credits`.
 
@@ -87,7 +85,7 @@ stremiohub/
 │  │     └─ fonts.css         # الخطوط المستضافة ذاتيًا
 │  ├─ index.md                # الرئيسية (إنجليزي)
 │  ├─ core-apps.md, addons.md, ...
-│  ├─ guides/                 # الأدلة (EN): stremio / self-hosting / gaming / anime
+│  ├─ guides/                 # الأدلة (EN): stremio / self-hosting
 │  ├─ 404.md
 │  ├─ ar/                     # النسخة العربية بالكامل (تشمل ar/guides/)
 │  └─ public/
@@ -110,7 +108,7 @@ stremiohub/
 ## English summary
 
 A bilingual (EN/AR, RTL) VitePress hub for everything Stremio — apps, forks, add-ons, debrid/Usenet
-providers and tools — plus original guides for self-hosting, gaming and anime. Build with
+providers and tools — plus original guides for self-hosting. Build with
 `npm run docs:build`; deploys to Cloudflare Pages automatically on push. The site hosts no files and
 is not affiliated with Stremio.
 

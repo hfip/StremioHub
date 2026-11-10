@@ -35,9 +35,13 @@ features:
     details: The providers that turn cached torrents and NZBs into instant streams.
     link: /debrid-services
   - icon: 📚
-    title: Guides
-    details: Stremio setup, debrid, self-hosting, gaming and anime walkthroughs.
-    link: /guides/
+    title: Stremio Guides
+    details: Setup, add-ons, debrid, Usenet, metadata, subtitles, troubleshooting and FAQ.
+    link: /guides/stremio/
+  - icon: 🖥️
+    title: Self-hosting
+    details: Run your own add-ons and services with Docker, Caddy and a free Oracle VPS.
+    link: /guides/self-hosting/
   - icon: 📖
     title: Glossary
     details: The jargon you actually need — add-ons, manifests, cache, P2P, debrid.

@@ -27,8 +27,6 @@ disagree, the upstream docs win — and please open an issue so we can fix ours.
 - **MediaFusion** — [mhdzumair/MediaFusion](https://github.com/mhdzumair/MediaFusion)
 - **Torrentio** — [TheBeastLT/torrentio-scraper](https://github.com/TheBeastLT/torrentio-scraper)
 - **StremThru** — [MunifTanjim/stremthru](https://github.com/MunifTanjim/stremthru)
-- **Aniyomi** — [aniyomi.org](https://aniyomi.org/), [GitHub](https://github.com/aniyomiorg/aniyomi)
-- **Plutonium** — [plutonium.pw](https://plutonium.pw/)
 
 ## Communities
 
@@ -49,6 +47,6 @@ disagree, the upstream docs win — and please open an issue so we can fix ours.
 
 ## Legal
 
-StremioHub is an unofficial community project. It is not affiliated with Stremio, Viren070, Plutonium
-or Aniyomi. It hosts no files and links to no copyrighted media. Trademarks belong to their owners;
-text on this site is our own work, licensed for reuse with attribution.
+StremioHub is an unofficial community project. It is not affiliated with Stremio or Viren070.
+It hosts no files and links to no copyrighted media. Trademarks belong to their owners; text on this
+site is our own work, licensed for reuse with attribution.
