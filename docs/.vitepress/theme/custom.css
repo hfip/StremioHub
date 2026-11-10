@@ -1,0 +1,109 @@
+/**
+ * StremioHub theme
+ * Stremio's brand colours are a violet → indigo gradient.
+ */
+:root {
+  --vp-c-brand-1: #8b5cf6;
+  --vp-c-brand-2: #7c3aed;
+  --vp-c-brand-3: #6d28d9;
+  --vp-c-brand-soft: rgba(139, 92, 246, 0.14);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #c4b5fd 10%, #8b5cf6 45%, #6366f1 90%);
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    rgba(139, 92, 246, 0.5) 40%,
+    rgba(99, 102, 241, 0.5) 70%
+  );
+  --vp-home-hero-image-filter: blur(56px);
+}
+
+.dark {
+  --vp-c-brand-1: #a78bfa;
+  --vp-c-brand-2: #8b5cf6;
+  --vp-c-brand-3: #7c3aed;
+  --vp-c-brand-soft: rgba(167, 139, 250, 0.16);
+}
+
+/* Slightly tighter content column, easier scanning of long link lists */
+.VPDoc .content-container {
+  max-width: 780px;
+}
+
+/* Make the long resource lists breathe */
+.VPDoc ul li {
+  margin-block: 4px;
+}
+
+.VPDoc ul li > a:first-child {
+  font-weight: 600;
+}
+
+/* "Does not host files" note on the home page */
+.home-note {
+  max-width: 688px;
+  margin: 48px auto 0;
+  padding: 16px 20px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Keep code and file paths LTR even in the Arabic (RTL) locale */
+[dir='rtl'] code,
+[dir='rtl'] pre {
+  direction: ltr;
+  text-align: left;
+}
+
+/**
+ * RTL layout fixes
+ * VitePress 1.x still positions the sidebar and the aside with physical
+ * properties, so we mirror them here for the Arabic locale.
+ */
+[dir='rtl'] .VPSidebar {
+  right: 0;
+  left: auto;
+  transform: translateX(100%);
+}
+
+[dir='rtl'] .VPSidebar.open {
+  transform: translateX(0);
+}
+
+[dir='rtl'] .VPContent.has-sidebar {
+  padding-left: 0;
+}
+
+@media (min-width: 960px) {
+  [dir='rtl'] .VPSidebar {
+    transform: none;
+  }
+
+  [dir='rtl'] .VPContent.has-sidebar {
+    padding-right: var(--vp-sidebar-width);
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  [dir='rtl'] .VPSidebar {
+    padding-right: max(32px, calc((100% - (var(--vp-layout-max-width) - 64px)) / 2));
+    padding-left: 32px;
+  }
+
+  [dir='rtl'] .VPContent.has-sidebar {
+    padding-right: calc((100vw - var(--vp-layout-max-width)) / 2 + var(--vp-sidebar-width));
+    padding-left: calc((100vw - var(--vp-layout-max-width)) / 2);
+  }
+}
+
+[dir='rtl'] .VPDoc .aside {
+  padding-right: 32px;
+  padding-left: 0;
+}

@@ -1,0 +1,63 @@
+name: Submit a resource
+description: Suggest an app, fork, add-on, tool, provider or guide for StremioHub.
+title: '[Resource]: '
+labels: ['submission']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! Please make sure the resource is not already listed and that the
+        link is the official source (GitHub repo or the project's own site).
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: e.g. Comet
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Official link
+      description: GitHub repository or official website. No file lockers, no shortened links.
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - App or fork
+        - Stream add-on
+        - Metadata / catalogue add-on
+        - Subtitle add-on
+        - Tool or utility
+        - Debrid or Usenet provider
+        - Guide
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: One-line description
+      description: What does it do, and why should it be listed? English or Arabic is fine.
+      placeholder: Fast torrent/debrid/Usenet scraper with a built-in proxy.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: The link is the official source and works.
+          required: true
+        - label: The resource is not already listed.
+          required: true
+        - label: I am not linking to copyrighted files directly.
+          required: true
