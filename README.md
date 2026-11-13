@@ -123,3 +123,7 @@ is not affiliated with Stremio.
 الفضل لفريق [Stremio](https://www.stremio.com/) ولمجتمع FMHY.
 
 صُنع بواسطة [@Abdulluh_X](https://t.me/Abdulluh_X).
+
+## License
+
+Documentation and content are licensed under [CC BY 4.0](LICENSE) © 2026 Abdulluh.X (hfip).
