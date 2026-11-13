@@ -50,5 +50,4 @@ docker compose up -d
 ## التالي
 
 - [MediaFusion](/ar/guides/stremio/mediafusion)
-- [Torrentio](/ar/guides/stremio/torrentio)
 - [خدمات Debrid](/ar/guides/stremio/debrid)

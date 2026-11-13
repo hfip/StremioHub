@@ -52,5 +52,4 @@ Cloudflare Tunnel handles that; see [Docker basics](/guides/self-hosting/docker)
 ## Next
 
 - [MediaFusion](/guides/stremio/mediafusion)
-- [Torrentio](/guides/stremio/torrentio)
 - [Debrid providers](/guides/stremio/debrid)

@@ -14,7 +14,7 @@
 - [البداية](/ar/guides/stremio/setup) — التثبيت، الحساب، أول إضافة
 - [كيف تعمل الإضافات](/ar/guides/stremio/addons) — الـ manifest والموارد والترتيب الصحيح
 - [AIOStreams](/ar/guides/stremio/aiostreams) · [Comet](/ar/guides/stremio/comet) ·
-  [MediaFusion](/ar/guides/stremio/mediafusion) · [Torrentio](/ar/guides/stremio/torrentio)
+  [MediaFusion](/ar/guides/stremio/mediafusion)
 - [خدمات Debrid](/ar/guides/stremio/debrid) · [Usenet](/ar/guides/stremio/usenet)
 - [الميتاداتا والكتالوجات](/ar/guides/stremio/metadata) · [الترجمة](/ar/guides/stremio/subtitles)
 - [الأدوات المساعدة](/ar/guides/stremio/extras)

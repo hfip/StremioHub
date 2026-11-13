@@ -23,7 +23,7 @@ AIOStreams إضافة **ميتا**: لا تبحث في مواقع التورنت
 2. أضف حساب **Debrid** في قسم *Services* (Real-Debrid، AllDebrid، Premiumize، TorBox،
    Debrid-Link…). الصق توكن الـ API لا كلمة المرور.
 3. أضف **الإضافات** التي تريد أن تسألها:
-   - Torrentio — `https://torrentio.strem.fun/manifest.json` (أو رابطك المضبوط)
+   - أي إضافة تملك حق استخدامها — الصق رابط manifest الخاص بها
    - Comet — رابط manifest الخاص بك
    - MediaFusion — رابط manifest الخاص بك
    - Prowlarr / Jackett — إن كنت تستضيف فهارسك

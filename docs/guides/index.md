@@ -14,7 +14,7 @@ right add-ons, and fixing the ten problems everyone hits.
 - [Getting started](/guides/stremio/setup) — install, account, first add-on
 - [How add-ons work](/guides/stremio/addons) — manifests, resources, a sane stack
 - [AIOStreams](/guides/stremio/aiostreams) · [Comet](/guides/stremio/comet) ·
-  [MediaFusion](/guides/stremio/mediafusion) · [Torrentio](/guides/stremio/torrentio)
+  [MediaFusion](/guides/stremio/mediafusion)
 - [Debrid providers](/guides/stremio/debrid) · [Usenet](/guides/stremio/usenet)
 - [Metadata & catalogs](/guides/stremio/metadata) · [Subtitles](/guides/stremio/subtitles)
 - [Extras & tools](/guides/stremio/extras)

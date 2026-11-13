@@ -24,7 +24,7 @@ list. That is why the fallback advice is to keep a second, simple stream add-on.
 2. Add your **debrid** account in *Services* (Real-Debrid, AllDebrid, Premiumize, TorBox,
    Debrid-Link…). Paste the API token, not your password.
 3. Add **add-ons** you want it to query:
-   - Torrentio — `https://torrentio.strem.fun/manifest.json` (or your configured URL)
+   - Any add-on you are authorized to use — paste its manifest URL
    - Comet — your Comet manifest URL
    - MediaFusion — your MediaFusion manifest URL
    - Prowlarr / Jackett — if you self-host indexers
