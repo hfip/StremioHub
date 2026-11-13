@@ -30,7 +30,7 @@ disagree, the upstream docs win — and please open an issue so we can fix ours.
 
 ## Communities
 
-- **[FMHY](https://fmhy.net/)** — the megathread culture this site borrows its format from.
+- **FMHY** — the megathread culture this site borrows its format from.
 - **[NuvioHub](https://nuviohub.pages.dev/)** — the layout reference for StremioHub itself.
 
 ## Fonts and assets

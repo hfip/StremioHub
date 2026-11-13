@@ -29,7 +29,7 @@
 
 ## المجتمعات
 
-- **[FMHY](https://fmhy.net/)** — ثقافة الـ megathread التي استعرنا منها الشكل.
+- **FMHY** — ثقافة الـ megathread التي استعرنا منها الشكل.
 - **[NuvioHub](https://nuviohub.pages.dev/)** — المرجع التصميمي لـ StremioHub نفسه.
 
 ## الخطوط والأصول

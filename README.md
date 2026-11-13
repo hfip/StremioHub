@@ -120,6 +120,6 @@ is not affiliated with Stremio.
 
 ---
 
-الفضل لفريق [Stremio](https://www.stremio.com/) ولمجتمع [FMHY](https://fmhy.net/).
+الفضل لفريق [Stremio](https://www.stremio.com/) ولمجتمع FMHY.
 
 صُنع بواسطة [@Abdulluh_X](https://t.me/Abdulluh_X).
